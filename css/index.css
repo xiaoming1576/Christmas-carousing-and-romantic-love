@@ -1,0 +1,72 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	height:100%;/*相对于浏览器的窗口来计算*/
+}
+body{
+	height:100%;/*相对于父元素的高度来计算*/
+	background:url("../images/top.png") no-repeat;
+	background-size:100% 100%;/*背景尺寸  左右 上下  */
+	overflow:hidden;
+}
+
+/*.heart{*/
+	/*相对于自己原来的位置定位*/
+/*	position:relative;
+	width:10px;
+	height:16px;
+	background:red;
+	border-radius:10px 10px 0 0;*/
+
+/*}*/
+/*
+	before :在标签内容的前面添加内容  相当于一个行内标签
+	after:在标签内容的后面添加内容  相当于一个行内标签 
+*/
+/*.heart:before,.heart:after{
+	position:absolute;
+	top:0;
+	left:0;
+	content:"";
+	display:block;
+	width:10px;
+	height:16px;
+	background:red;
+	border-radius:10px 10px 0 0;
+	transform:rotate(-45deg);
+}
+.heart:after{
+	left:4px;
+	transform:rotate(45deg);
+}*/
+
+ .snowfall-flakes{
+    position:relative;
+    width:10px;
+    height:16px;
+}
+.snowfall-flakes:before,.snowfall-flakes:after{
+    content:"";
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:block;
+    width:10px;
+    height:16px;
+    background:red;
+    border-radius:10px 10px 0 0;
+    transform:rotate(-45deg);
+}
+.snowfall-flakes:after{
+    left:4px;
+    transform:rotate(45deg);
+}
+.btn{
+	width:50px;
+	height:50px;
+	background:url("../images/0.png"); 
+}
+
+
